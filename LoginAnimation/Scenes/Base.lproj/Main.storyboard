@@ -100,11 +100,42 @@
                         <outlet property="tfLogin" destination="0ri-7q-n3r" id="PXO-ug-6j2"/>
                         <outlet property="tfPassword" destination="VxD-3D-qoY" id="6sy-Tb-QnR"/>
                         <outlet property="viewCenterConstraint" destination="Xnm-Rc-yL9" id="wFc-km-lra"/>
+                        <segue destination="A91-8s-056" kind="show" identifier="pushSuccessLogin" id="DbX-EZ-dXV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138.40000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="vtu-9h-spR">
+            <objects>
+                <viewController id="A91-8s-056" customClass="HomeViewController" customModule="LoginAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z5E-ZO-WZJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xhf-Kc-jME">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xhf-Kc-jME" firstAttribute="leading" secondItem="Vf8-4T-FOv" secondAttribute="leading" id="Lri-JZ-U85"/>
+                            <constraint firstItem="Vf8-4T-FOv" firstAttribute="trailing" secondItem="xhf-Kc-jME" secondAttribute="trailing" id="R0k-et-q8X"/>
+                            <constraint firstItem="xhf-Kc-jME" firstAttribute="top" secondItem="Z5E-ZO-WZJ" secondAttribute="top" id="ZUl-rf-yq7"/>
+                            <constraint firstAttribute="bottom" secondItem="xhf-Kc-jME" secondAttribute="bottom" id="aQu-FV-IqK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Vf8-4T-FOv"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="xhf-Kc-jME" id="VHz-dQ-p3t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WKX-2C-Jbd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="940" y="139"/>
         </scene>
     </scenes>
     <resources>

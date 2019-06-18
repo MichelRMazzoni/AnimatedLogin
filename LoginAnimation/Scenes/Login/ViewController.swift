@@ -82,6 +82,7 @@ class ViewController: UIViewController {
                         theButton.bounds = bounds
                         theButton.setTitle("Login success", for: .normal)
                         self.btnLogin.backgroundColor = UIColor(red: 0/255.0, green: 140/255.0, blue: 80/255.0, alpha: 1.0)
+                        self.performSegue(withIdentifier: "pushSuccessLogin", sender: nil)
                     })
                 }
             }
