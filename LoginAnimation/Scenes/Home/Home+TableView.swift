@@ -6,6 +6,7 @@
 //  Copyright © 2019 Michel Mazzoni. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
@@ -43,6 +44,5 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             delayCounter += 1
         }
     }
-    
     
 }
